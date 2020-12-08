@@ -1,17 +1,12 @@
------------------------------CLOUDIS RADAR
--- BY CLOUDIS
--- BY CLOUDIS
--- BY CLOUDIS
--- BY CLOUDIS
 kartta = false
-ESX = nil
+--ESX = nil
 
 Citizen.CreateThread(function()
     while true do
         while not kartta do
             if IsControlJustPressed(1, 56) then --F9
                 kartta = true
-                TriggerEvent('esx_status:setDisplay', 0.0)
+                --TriggerEvent('esx_status:setDisplay', 0.0)
             end
             Citizen.Wait(5)
         end
@@ -20,14 +15,10 @@ Citizen.CreateThread(function()
             if IsControlJustPressed(1, 56) then --F9
                 kartta = false
                 DisplayRadar(true)
-                TriggerEvent('esx_status:setDisplay', 1.0)
+                --TriggerEvent('esx_status:setDisplay', 1.0)
             end
             Citizen.Wait(5)
         end
     end
 end)
 -- BY CLOUDIS
--- BY CLOUDIS
--- BY CLOUDIS
--- BY CLOUDIS
------------------------------CLOUDIS RADAR
